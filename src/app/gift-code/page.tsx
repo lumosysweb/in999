@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import { Ticket, Copy, Gift } from "lucide-react";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
@@ -6,13 +5,14 @@ import { PageHero } from "@/components/ui/PageHero";
 import { Card } from "@/components/ui/Card";
 import { Button } from "@/components/ui/Button";
 import { SITE } from "@/lib/constants";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
   title: `Gift Code | ${SITE.fullName}`,
   description:
     "Redeem IN999 gift codes for bonus credits. Learn how gift codes work and where to find the latest active codes.",
-  alternates: { canonical: "/gift-code" },
-};
+  path: "/gift-code",
+});
 
 const STEPS = [
   "Open your IN999 wallet and tap Gift Code.",

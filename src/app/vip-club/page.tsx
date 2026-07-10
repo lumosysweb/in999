@@ -1,17 +1,17 @@
-import type { Metadata } from "next";
 import { Crown } from "lucide-react";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { PageHero } from "@/components/ui/PageHero";
 import { Card } from "@/components/ui/Card";
 import { SITE } from "@/lib/constants";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
   title: `VIP Club | ${SITE.fullName}`,
   description:
     "Join the IN999 VIP Club — tiered rewards, faster withdrawals, and exclusive perks for loyal players.",
-  alternates: { canonical: "/vip-club" },
-};
+  path: "/vip-club",
+});
 
 const TIERS = [
   { name: "Bronze", requirement: "Entry level", perk: "Welcome bonus + daily rewards" },

@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import Image from "next/image";
 import { Download } from "lucide-react";
 import { Header } from "@/components/layout/Header";
@@ -7,13 +6,14 @@ import { PageHero } from "@/components/ui/PageHero";
 import { Card } from "@/components/ui/Card";
 import { Button } from "@/components/ui/Button";
 import { SITE } from "@/lib/constants";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
   title: `APK Download | ${SITE.fullName}`,
   description:
     "Direct APK download for IN999 Android app. Latest version, changelog, install steps, and device requirements.",
-  alternates: { canonical: "/apk-download" },
-};
+  path: "/apk-download",
+});
 
 const STEPS = [
   "Tap Download APK below to save the file to your device.",

@@ -3,6 +3,7 @@ import { SITE } from "@/lib/constants";
 
 const ROUTES = [
   { path: "", priority: 1, changeFrequency: "daily" as const },
+  { path: "/login", priority: 0.9, changeFrequency: "weekly" as const },
   { path: "/download-app", priority: 0.8, changeFrequency: "weekly" as const },
   { path: "/games", priority: 0.8, changeFrequency: "weekly" as const },
   { path: "/gift-code", priority: 0.7, changeFrequency: "daily" as const },

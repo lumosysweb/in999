@@ -1,17 +1,17 @@
-import type { Metadata } from "next";
 import { Gift, RefreshCcw, Users, CalendarCheck } from "lucide-react";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { PageHero } from "@/components/ui/PageHero";
 import { Card } from "@/components/ui/Card";
 import { SITE } from "@/lib/constants";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
   title: `Promotions | ${SITE.fullName}`,
   description:
     "See all active IN999 promotions — welcome bonus, daily rewards, reload bonus, and referral payouts.",
-  alternates: { canonical: "/promotions" },
-};
+  path: "/promotions",
+});
 
 const PROMOTIONS = [
   { title: "Welcome Bonus", description: "New players get an instant bonus on their first deposit.", icon: Gift },

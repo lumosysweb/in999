@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import { Send, Mail, Clock } from "lucide-react";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
@@ -6,13 +5,14 @@ import { PageHero } from "@/components/ui/PageHero";
 import { Card } from "@/components/ui/Card";
 import { Button } from "@/components/ui/Button";
 import { SITE } from "@/lib/constants";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
   title: `Contact & Support | ${SITE.fullName}`,
   description:
     "Get in touch with IN999 support — Telegram, email, and 24x7 live help for account, deposit, and withdrawal questions.",
-  alternates: { canonical: "/contact" },
-};
+  path: "/contact",
+});
 
 const CHANNELS = [
   { title: "Telegram Support", description: "Fastest response — chat with our team directly.", icon: Send, action: "Open Telegram", href: "https://t.me/" },

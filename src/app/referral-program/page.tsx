@@ -1,17 +1,17 @@
-import type { Metadata } from "next";
 import { Share2, UserPlus, Wallet } from "lucide-react";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { PageHero } from "@/components/ui/PageHero";
 import { Card } from "@/components/ui/Card";
 import { SITE } from "@/lib/constants";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
   title: `Referral Program | ${SITE.fullName}`,
   description:
     "Invite friends to IN999 and earn a share of their play. Learn how the referral program works and how payouts are calculated.",
-  alternates: { canonical: "/referral-program" },
-};
+  path: "/referral-program",
+});
 
 const STEPS = [
   { title: "Share Your Link", description: "Get your unique referral link from your wallet dashboard.", icon: Share2 },

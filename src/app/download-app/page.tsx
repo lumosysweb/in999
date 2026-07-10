@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import Image from "next/image";
 import { Smartphone, Zap, ShieldCheck, WifiOff } from "lucide-react";
 import { Header } from "@/components/layout/Header";
@@ -7,13 +6,14 @@ import { PageHero } from "@/components/ui/PageHero";
 import { Card } from "@/components/ui/Card";
 import { Button } from "@/components/ui/Button";
 import { SITE } from "@/lib/constants";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
   title: `Download App | ${SITE.fullName}`,
   description:
     "Download the official IN999 app for Android. Fast installs, instant access to all games, and a lighter, faster experience than the browser.",
-  alternates: { canonical: "/download-app" },
-};
+  path: "/download-app",
+});
 
 const REASONS = [
   { title: "Faster Access", description: "Skip the browser — launch straight into your games.", icon: Zap },

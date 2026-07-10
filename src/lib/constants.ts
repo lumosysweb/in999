@@ -9,9 +9,13 @@ export const SITE = {
   tagline: "India's Trusted Gaming Platform",
 } as const;
 
+// Temporary registration/login destination until the in999.in.net wallet platform goes live.
+export const REGISTER_URL = "https://www.jaiclub15.com/#/register?invitationCode=34881915294";
+
 export const NAV_LINKS = [
   { label: "Home", href: "/" },
   { label: "Games", href: "/games" },
+  { label: "Login", href: "/login" },
   { label: "Promotions", href: "/promotions" },
   { label: "Download", href: "/download-app" },
   { label: "FAQ", href: "/faq" },

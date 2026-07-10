@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Download } from "lucide-react";
 import { Button } from "@/components/ui/Button";
-import { SITE } from "@/lib/constants";
+import { REGISTER_URL, SITE } from "@/lib/constants";
 
 export function Hero() {
   return (
@@ -26,7 +26,7 @@ export function Hero() {
             </p>
 
             <div className="flex flex-wrap items-center gap-3">
-              <Button variant="gold">Register</Button>
+              <Button variant="gold" href={REGISTER_URL}>Register</Button>
               <Button variant="outline" href="/download-app" icon={<Download className="h-4 w-4" />}>
                 Download
               </Button>

@@ -1,17 +1,17 @@
-import type { Metadata } from "next";
 import { Plus } from "lucide-react";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { PageHero } from "@/components/ui/PageHero";
 import { FAQ_ITEMS } from "@/lib/data";
 import { SITE } from "@/lib/constants";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
   title: `FAQ | ${SITE.fullName}`,
   description:
     "Answers to common questions about IN999 registration, withdrawals, the Android app, and bonuses.",
-  alternates: { canonical: "/faq" },
-};
+  path: "/faq",
+});
 
 const faqSchema = {
   "@context": "https://schema.org",

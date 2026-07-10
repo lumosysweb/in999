@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { Menu, X, Download, Crown } from "lucide-react";
-import { NAV_LINKS, SITE } from "@/lib/constants";
+import { NAV_LINKS, REGISTER_URL, SITE } from "@/lib/constants";
 import { Button } from "@/components/ui/Button";
 
 export function Header() {
@@ -47,7 +47,7 @@ export function Header() {
         </nav>
 
         <div className="hidden items-center gap-3 lg:flex">
-          <Button variant="gold" className="px-5 py-2.5 text-xs">
+          <Button variant="gold" href={REGISTER_URL} className="px-5 py-2.5 text-xs">
             Register
           </Button>
           <Button
@@ -87,7 +87,7 @@ export function Header() {
             </Link>
           ))}
           <div className="mt-2 flex flex-col gap-3">
-            <Button variant="gold">Register</Button>
+            <Button variant="gold" href={REGISTER_URL}>Register</Button>
             <Button variant="outline" href="/download-app" icon={<Download className="h-3.5 w-3.5" />}>
               Download App
             </Button>

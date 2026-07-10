@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Poppins, Montserrat } from "next/font/google";
 import "./globals.css";
 import { SITE } from "@/lib/constants";
@@ -23,10 +23,12 @@ export const metadata: Metadata = {
   description: SITE.description,
   keywords: [
     "IN999",
+    "IN999 Login",
     "IN999 Game",
-    "online gaming platform India",
     "IN999 register",
     "IN999 download",
+    "IN999 APK",
+    "online gaming platform India",
     "WinGo",
     "K3",
     "5D",
@@ -43,10 +45,10 @@ export const metadata: Metadata = {
     description: SITE.description,
     images: [
       {
-        url: "/images/in999-hero.webp",
+        url: "/images/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "IN999 Game",
+        alt: SITE.title,
       },
     ],
   },
@@ -54,7 +56,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: SITE.title,
     description: SITE.description,
-    images: ["/images/in999-hero.webp"],
+    images: ["/images/og-image.jpg"],
   },
   robots: {
     index: true,
@@ -63,6 +65,12 @@ export const metadata: Metadata = {
   verification: {
     google: "UWWFC1BQhro8tzO6aD8DLvQj8PmuxS51nr4qoZzWchM",
   },
+};
+
+export const viewport: Viewport = {
+  themeColor: "#071225",
+  width: "device-width",
+  initialScale: 1,
 };
 
 const organizationSchema = {

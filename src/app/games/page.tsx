@@ -1,18 +1,17 @@
-import type { Metadata } from "next";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { PageHero } from "@/components/ui/PageHero";
 import { Card } from "@/components/ui/Card";
 import { Button } from "@/components/ui/Button";
 import { POPULAR_GAMES } from "@/lib/data";
-import { SITE } from "@/lib/constants";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: `Games | ${SITE.fullName}`,
+export const metadata = pageMetadata({
+  title: "IN999 Game | WinGo, K3, 5D, TRX, Sports & Casino",
   description:
-    "Explore all IN999 games — WinGo, K3, 5D, TRX, Sports betting and Casino. Fast rounds, fair outcomes, instant payouts.",
-  alternates: { canonical: "/games" },
-};
+    "Explore every IN999 Game — WinGo, K3, 5D, TRX, Sports betting and Casino. Fast rounds, fair outcomes, instant payouts.",
+  path: "/games",
+});
 
 export default function GamesPage() {
   return (
@@ -27,6 +26,16 @@ export default function GamesPage() {
 
         <section className="relative px-5 pb-24 sm:px-8 sm:pb-28">
           <div className="mx-auto max-w-[1400px]">
+            <p className="mx-auto mb-14 max-w-2xl text-center text-sm leading-relaxed text-mist-dim sm:text-base">
+              Every IN999 Game is designed for quick rounds and clear results. Whether you prefer the colour
+              prediction of WinGo, the dice strategy of K3, multi-digit 5D predictions, blockchain-powered TRX
+              rounds, live Sports markets, or classic Casino tables, each IN999 Game category is available instantly
+              after you complete the{" "}
+              <a href="/login" className="text-gold hover:underline">
+                IN999 Login
+              </a>{" "}
+              process.
+            </p>
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
               {POPULAR_GAMES.map((game) => {
                 const Icon = game.icon;
