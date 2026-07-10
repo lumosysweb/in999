@@ -34,7 +34,7 @@ export function Hero() {
           </div>
 
           {/* Hero image */}
-          <div className="relative mx-auto flex justify-center">
+          <div className="relative flex justify-center">
             <div className="animate-float relative h-[280px] w-full max-w-[480px] sm:h-[380px] lg:h-[480px]">
               <Image
                 src="/images/in999-hero.webp"
