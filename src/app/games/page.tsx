@@ -31,7 +31,7 @@ export default function GamesPage() {
               prediction of WinGo, the dice strategy of K3, multi-digit 5D predictions, blockchain-powered TRX
               rounds, live Sports markets, or classic Casino tables, each IN999 Game category is available instantly
               after you complete the{" "}
-              <a href="/login" className="text-gold hover:underline">
+              <a href="/login" className="text-gold underline underline-offset-2 hover:text-gold/80">
                 IN999 Login
               </a>{" "}
               process.

@@ -17,7 +17,7 @@ export function AboutIn999() {
             <h3 className="text-lg font-semibold text-mist">{SITE.name} Game</h3>
             <p className="mt-3 text-sm leading-relaxed text-mist-dim">
               {SITE.fullName} is an online gaming platform built around fast, simple game formats —{" "}
-              <Link href="/games" className="text-gold hover:underline">
+              <Link href="/games" className="text-gold underline underline-offset-2 hover:text-gold/80">
                 WinGo, K3, 5D, TRX, Sports and Casino
               </Link>
               . Every {SITE.name} game round runs quickly, with results and payouts designed to be transparent and
@@ -29,7 +29,7 @@ export function AboutIn999() {
             <h3 className="text-lg font-semibold text-mist">{SITE.name} Login</h3>
             <p className="mt-3 text-sm leading-relaxed text-mist-dim">
               New players can register in under a minute, and returning players can complete{" "}
-              <Link href="/login" className="text-gold hover:underline">
+              <Link href="/login" className="text-gold underline underline-offset-2 hover:text-gold/80">
                 {SITE.name} Login
               </Link>{" "}
               with just a mobile number and password. Once signed in, your wallet, game history, and bonuses are all
@@ -42,7 +42,7 @@ export function AboutIn999() {
             <p className="mt-3 text-sm leading-relaxed text-mist-dim">
               {SITE.name} uses a secure in-app wallet for deposits and withdrawals, so you always have a clear
               record of your balance. Support is available 24x7 through our{" "}
-              <Link href="/contact" className="text-gold hover:underline">
+              <Link href="/contact" className="text-gold underline underline-offset-2 hover:text-gold/80">
                 contact page
               </Link>{" "}
               for any account or payment questions.
@@ -52,15 +52,15 @@ export function AboutIn999() {
 
         <p className="mt-10 text-center text-sm leading-relaxed text-mist-dim">
           Ready to get started? Head to the{" "}
-          <Link href="/login" className="text-gold hover:underline">
+          <Link href="/login" className="text-gold underline underline-offset-2 hover:text-gold/80">
             {SITE.name} Login
           </Link>{" "}
           page to sign in or create an account, browse the full{" "}
-          <Link href="/games" className="text-gold hover:underline">
+          <Link href="/games" className="text-gold underline underline-offset-2 hover:text-gold/80">
             {SITE.name} Game
           </Link>{" "}
           lineup, or grab the Android app from our{" "}
-          <Link href="/download-app" className="text-gold hover:underline">
+          <Link href="/download-app" className="text-gold underline underline-offset-2 hover:text-gold/80">
             download page
           </Link>
           .

@@ -79,7 +79,7 @@ export default function ResponsibleGamingPage() {
               <h2 className="text-2xl font-bold text-mist">Need Help?</h2>
               <p className="mt-4 text-sm leading-relaxed text-mist-dim">
                 If you feel your gaming is becoming a problem, reach out to our{" "}
-                <a href="/contact" className="text-gold hover:underline">
+                <a href="/contact" className="text-gold underline underline-offset-2 hover:text-gold/80">
                   support team
                 </a>{" "}
                 to discuss account limits or a break from play, or contact a local, independent problem-gambling

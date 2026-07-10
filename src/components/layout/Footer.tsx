@@ -25,9 +25,9 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="text-sm font-semibold uppercase tracking-[0.2em] text-gold">
+            <h3 className="text-sm font-semibold uppercase tracking-[0.2em] text-gold">
               Explore
-            </h4>
+            </h3>
             <ul className="mt-4 flex flex-col gap-3">
               {FOOTER_PAGES.map((link) => (
                 <li key={link.href}>
@@ -40,9 +40,9 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="text-sm font-semibold uppercase tracking-[0.2em] text-gold">
+            <h3 className="text-sm font-semibold uppercase tracking-[0.2em] text-gold">
               Guides
-            </h4>
+            </h3>
             <ul className="mt-4 flex flex-col gap-3">
               {GUIDE_PAGES.map((link) => (
                 <li key={link.href}>
@@ -55,9 +55,9 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="text-sm font-semibold uppercase tracking-[0.2em] text-gold">
+            <h3 className="text-sm font-semibold uppercase tracking-[0.2em] text-gold">
               Legal
-            </h4>
+            </h3>
             <ul className="mt-4 flex flex-col gap-3">
               {LEGAL_LINKS.map((link) => (
                 <li key={link.href}>
@@ -81,9 +81,9 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="text-sm font-semibold uppercase tracking-[0.2em] text-gold">
+            <h3 className="text-sm font-semibold uppercase tracking-[0.2em] text-gold">
               Our Network
-            </h4>
+            </h3>
             <ul className="mt-4 flex flex-col gap-3">
               {PARTNER_SITES.map((site) => (
                 <li key={site.href}>
@@ -99,9 +99,9 @@ export function Footer() {
               ))}
             </ul>
 
-            <h4 className="mt-8 text-sm font-semibold uppercase tracking-[0.2em] text-gold">
+            <h3 className="mt-8 text-sm font-semibold uppercase tracking-[0.2em] text-gold">
               Follow Us
-            </h4>
+            </h3>
             <div className="mt-4 flex items-center gap-3">
               <a
                 href="https://t.me/"

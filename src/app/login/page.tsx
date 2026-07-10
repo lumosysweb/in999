@@ -89,7 +89,7 @@ export default function LoginPage() {
                 If your IN999 login isn&apos;t working, double-check your mobile number and password for typos, make
                 sure you&apos;re on the official {SITE.domain} domain, and confirm you have a stable internet
                 connection. Still stuck? Reach out through our{" "}
-                <a href="/contact" className="text-gold hover:underline">
+                <a href="/contact" className="text-gold underline underline-offset-2 hover:text-gold/80">
                   support page
                 </a>{" "}
                 for help recovering account access.
