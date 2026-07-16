@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Poppins, Montserrat } from "next/font/google";
 import "./globals.css";
 import { SITE } from "@/lib/constants";
+import { StickyJoinBar } from "@/components/ui/StickyJoinBar";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -115,7 +116,10 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
         />
       </head>
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col pb-[68px] sm:pb-[64px]">
+        {children}
+        <StickyJoinBar />
+      </body>
     </html>
   );
 }
