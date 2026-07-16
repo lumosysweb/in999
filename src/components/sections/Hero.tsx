@@ -10,7 +10,7 @@ export function Hero() {
         <div className="grid items-center gap-12 lg:grid-cols-[0.72fr_1.28fr] lg:gap-8">
           {/* Left content */}
           <div className="relative z-10 flex flex-col items-start gap-6">
-            <span className="card inline-flex items-center gap-2 rounded-full px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.25em] text-gold">
+            <span className="card inline-flex max-w-full items-center gap-2 rounded-full px-4 py-2 text-[9px] font-semibold uppercase tracking-[0.1em] text-gold sm:text-[11px] sm:tracking-[0.25em]">
               {SITE.tagline}
             </span>
 
